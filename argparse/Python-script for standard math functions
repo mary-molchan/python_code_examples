@@ -1,0 +1,39 @@
+import math
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("operation", type=str)
+parser.add_argument("a", type=int)
+parser.add_argument("b", type=int)
+args = parser.parse_args()
+
+operation = args.operation
+a = args.a
+b = args.b
+
+def calculate(a, b):
+    if args.operation == "add":
+        print (a + b)
+    elif args.operation == "sub":
+        print(a - b)
+    elif args.operation == "mul":
+        print(a * b)
+    elif args.operation == "divide":
+        print(a / b)
+    elif args.operation == "pow":
+        print(a ** b)
+    elif args.operation == "floordiv":
+        print(a // b)
+    elif args.operation == "mod":
+        print(a % b)
+    elif args.operation == "matmul":
+        print(a @ b)
+    else:
+        raise(NotImplementedError)
+
+def main(calculate):
+    args = a, b
+    print(calculate(a, b))
+
+if __name__ == '__main__':
+    main(calculate)
