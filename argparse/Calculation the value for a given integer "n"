@@ -1,0 +1,27 @@
+# For a given integer n calculate the value which is:
+# equal to a squared number, if its value is strictly positive; modulus of a number, if its value is strictly negative; zero, if the integer n is zero.
+
+----------------------------------------------------
+
+import argparse
+import math
+
+parser = argparse.ArgumentParser()
+parser.add_argument("n", type=int)
+args = parser.parse_args()
+n = args.n
+
+def calculation(n):
+    if n >= 1:
+        return n**2
+    elif n <= -1:
+        return abs(n)
+    elif n == 0:
+        return 0
+
+def main():
+    args = n
+    print(calculation(n))
+
+if __name__ == '__main__':
+    main()
