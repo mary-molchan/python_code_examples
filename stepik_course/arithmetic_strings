@@ -1,0 +1,8 @@
+''' Input data format: three lines, each on a separate line.
+Output data format: output the string "YES", if the lengths of the entered words can be used to construct an arithmetic progression, "NO" otherwise.'''
+
+a, b, c = len(input()), len(input()), len(input())
+if (2*b-c-a)*(2*c-b-a)*(2*a-b-c) == 0:
+    print("YES")
+else:
+    print("NO")
