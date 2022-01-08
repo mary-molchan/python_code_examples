@@ -1,0 +1,4 @@
+# Determines the Manhattan distance between two given coordinates (https://tproger.ru/translations/3-basic-distances-in-data-science/)
+
+p1, p2, q1, q2 = int(input()), int(input()), int(input()), int(input())
+print(abs(p1-q1) + abs(p2-q2))
