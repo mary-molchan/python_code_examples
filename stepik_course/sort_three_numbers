@@ -1,0 +1,9 @@
+''' Write code that orders the three numbers from highest to lowest.
+Input data format: three integers, each on a separate line.
+Output format: three numbers, each on a separate line, ordered from highest to lowest. '''
+
+a1, a2, a3, = int(input()), int(input()), int(input())
+max = max(a1, a2, a3)
+min = min(a1, a2, a3)
+avg = (a1 + a2 + a3) - max - min
+print (max, avg, min, sep="\n")
