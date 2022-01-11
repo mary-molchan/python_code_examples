@@ -1,0 +1,16 @@
+# a program that reads three numbers and only sums the positive numbers; link to Stepik course: https://stepik.org/course/58852/syllabus
+
+a, b, c = int(input()), int(input()), int(input())
+if a >= 0:
+    a = a
+else: 
+    a = 0
+if b >= 0:
+    b = b
+else: 
+    b = 0 
+if c >= 0:
+    c = c
+else: 
+    c = 0
+print(a+b+c)
